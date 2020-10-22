@@ -1,0 +1,405 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.page-container {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+aside {
+    width: 300px;
+    height: 710px;
+    background-color: #f2ede8;
+    position: relative;
+    text-align: center;
+}
+
+.menu-side-section {
+    margin-top: 40%;
+    width: 100%;
+    position: absolute;
+}
+
+.img-logoes {
+   width: 100px;
+   height: 100px;
+   padding-left: 80px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: justify;
+    padding-left: 80px;
+}
+
+nav ul li {
+    padding-top: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+.menu-section.selected {
+    border-bottom: 4px solid #e8e0d8;
+}
+
+main, .order-events-wp, .picture-products, 
+section, .upper-order-events-sec, 
+.interactive-menu ul, .reward-status-page, 
+.order-details-page, .account-settings-page, 
+.payment-methods-page,
+.row-a, .row-b, .row-c, .row-d,
+.reward-status-body, .form-cells, .addresses-wrapper,
+.addresses-cell-container, .plus-more, .cards-wrapper {
+    display: flex;
+}
+
+section {
+    background-color: #f8f5f2;
+    width: 100%;
+    height: auto;
+    position: relative;
+    flex-direction: column;
+}
+
+.order-events-wp {
+    width: 900px;
+    height: auto;
+}
+
+.order-events-wp, .title-section-a {
+    position: absolute;
+    margin-left: 50px;
+}
+
+.title-section-a {
+    margin-top: 8%;
+    width: 120px;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+.order-events-wp {
+    margin-top: 15%;
+    padding-top: 40px;
+}
+ 
+.bag-img, .phone-pic, .belt-pic, .hat-pic, .three-more-pics,
+.card-a, .card-b, .card-c {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #f2ede8;
+    background-position: center;
+}
+
+.phone-pic, .belt-pic, .hat-pic, .three-more-pics {
+    width: 150px;
+    height: 200px;
+}
+
+.bag-img {
+    background-image: url(../assets/product-1/product.png);
+    width: 400px;
+    height: auto;
+}
+
+.upper-order-events-sec {
+    justify-content: space-between;
+    width: 700px;
+}
+
+.phone-pic {
+    background-image: url(../assets/product-1/addition-1.png);
+}
+
+.belt-pic {
+    background-image: url(../assets/product-1/addition-3.png);
+}
+
+.hat-pic {
+    background-image: url(../assets/product-1/addition-4.png);
+}
+
+.picture-products {
+    width: 700px;
+    height: 110px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.phone-pic, .belt-pic, .hat-pic, .three-more-pics {
+    width: 100px;
+    height: 100px;
+}
+
+.order {
+    padding-bottom: 10px;
+    flex: 1;
+}
+
+.order-events {
+    padding-left: 30px;
+}
+
+.order div:nth-child(1), .order a, .cancel-modify, .order-b, 
+.order-details {
+    font-size: 12px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.order div:nth-child(2), .row-a div div:nth-child(1), .row-b div div:nth-child(1),
+.row-c div div:nth-child(1) {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.order-b {
+    padding-top: 20px;
+    word-spacing: 2px;
+}
+
+.order-cancel-modify {
+    width: 100px;
+    text-align: right;
+}
+
+.order-details, .cancel-modify {
+    text-decoration: none;
+    color: black;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.three-more-pics div {
+    text-align: center;
+    margin-top: 35%;
+    padding-left: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    width: 40px;
+}
+
+/*pages--*/
+
+.hidden, .form-cells label {
+    display: none;
+}
+
+.your-orders-page {
+    z-index: 1;
+}
+
+.reward-status-page {
+    z-index: 2;
+}
+
+.account-settings-page {
+    z-index: 3;
+}
+
+.payment-methods-page {
+    z-index: 4;
+}
+
+.sign-out-page {
+    z-index: 5;
+}
+
+.order-details-page {
+    z-index: 6;
+}
+
+/*Reward-Status*/
+.reward-status-body {
+   flex-direction: column;
+   width: 96%;
+   height: 96%;
+   position: relative;
+}
+
+.interactive-menu {
+    width: 700px;
+    align-self: flex-end;
+}
+
+.interactive-menu ul {
+    flex-direction: row;
+    justify-content: space-around;
+    padding-right: 10px;
+}
+
+.interactive-menu img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.dimension-pics, .row-d img {
+    width: 100%; 
+    height: auto;
+}
+
+.rows-reward-status {
+    position: absolute;
+    margin-top: 20%;
+    padding-left: 50px;
+}
+.row-a, .row-b, .row-c, .row-d {
+    width: 800px;
+}
+
+.row-a div, .row-b div, .row-c div, .row-d div {
+    flex: 1;
+    padding-top: 10px;
+    font-weight: bolder;
+}
+
+.row-d {
+    justify-content: space-between;
+    width: 800px;
+    margin-top: 50px;
+}
+
+.row-d img {
+    width: 60px;
+    height: 60px;
+}
+
+form, .cards-wrapper {
+    margin-top: 12%;
+}
+/*---account-settings-layout--*/
+form, .form-cells input, button{
+   font-family: 'Roboto', sans-serif;
+   font-size: 15px;
+}
+
+.form-cells input {
+    font-weight: bold;
+}
+
+form div:nth-child(1), .cards-wrapper {
+    margin-left: 50px;
+}
+
+.form-cells {
+    padding: 20px 40px 0px 50px;
+}
+
+.form-cells input {
+    margin-right: 50px;
+    padding: 10px;
+    width: 400px;
+    background-color:  #f8f5f2;
+    border: solid grey 1px;
+}
+
+button {
+    width: 400px;
+    background-color: black;
+    margin: 20px 0 0 50px;
+    color: white;
+    text-transform: uppercase;
+    height: 40px;
+}
+
+.validation-input {
+    
+}
+
+.addresses-wrapper {
+    flex-direction: column;
+    padding: 30px 0 10px 0;
+    width: 900px;
+}
+
+.title-address {
+    padding-bottom: 20px;
+}
+
+.addresses-cell-container {
+    justify-content: space-between;
+}
+
+.addresses-cell {
+    width: 400px;
+    border-radius: 15px;
+    background-color: black;
+    height: 120px;
+    padding-top: 30px;
+}
+
+.addresses-cell div {
+    font-size: 15px;
+    color: white;
+    flex-direction: column;
+}
+
+.addresses-cell div:nth-child(1), .addresses-cell div {
+    margin-left: 10px;
+}
+
+/*---payment-methods-layout--*/
+.card-a, .card-b, .card-c, .plus-more {
+    width: 400px;
+    height: 230px;
+    background-color: #f8f5f2;
+    border-radius: 15px;
+}
+
+.card-a {
+    background-image: url(../assets/card-1.png);
+}
+
+.card-b {
+    background-image: url(../assets/card-3.png);
+}
+
+.card-c {
+    background-image: url(../assets/card-2.png);
+}
+
+.plus-pic  {
+    width: 15%;
+    height: auto;
+}
+
+.plus-more {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  #f2ede8;
+}
+
+.card-b, .card-c {
+    margin-right: 10px;
+}
+
+.plus-more, .card-b {
+    margin-top: 10px;
+}
