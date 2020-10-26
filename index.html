@@ -13,11 +13,15 @@
       <header>Free shippping on orders over $250</header>
       <main>
           <aside>
-              <div class="menu-side-section">
+            <div class="logo-boundary-wp">
+                <img class="logo-boundary" src="assets/logo-boundary.png" alt="logo-boundary-pic">
+            </div>
+
+            <div class="menu-side-section">
                 <div class="selected content img-logoes your-orders-page">
                     <img class="dimension-pics" src="assets/logo-vip.png" alt="vip-img">
                 </div>
-
+                
                 <div class="content img-logoes hidden reward-status-page">
                     <img class="dimension-pics" src="assets/logo-gold.png" alt="gold-img">
                 </div>
@@ -33,6 +37,7 @@
                 <div class="content img-logoes hidden sign-out-page">
                     <img class="dimension-pics" src="assets/logo-vip.png" alt="vip-img">
                 </div>
+            
                 <nav>
                     <ul>
                         <li><a class="menu-section selected" data-content="your-orders-page">Your Orders</a></li>
@@ -42,8 +47,9 @@
                         <li><a class="menu-section" data-content="sign-out-page">Sign Out</a></li>
                     </ul>
                 </nav>
+            </div>
           </aside>
-
+          
           <section class="content your-orders-page">
               <div class="title-section-a">Your Orders</div>
               <div class="order-events-wp">
@@ -55,7 +61,7 @@
                                 <div>Processing</div>
                           </div>
                           <div class="order-cancel-modify">
-                              <a class="order-details" data-content="orders-details-page">Order Details</a>
+                              <a id="order-link" class="order-details" data-content="orders-details-page" href="#">Order Details</a>
                               <p class="cancel-modify">Cancel/ Modify</p>
                           </div>
                       </div>
@@ -78,28 +84,16 @@
               </div>
            </section>
 
-           <section class="content hidden order-details-page">
-            <nav class="interactive-menu">
-                <ul>
-                    <li><a href="#">SHOP</a></li>
-                    <li><img class="dimension-pics" src="assets/icon-find.png" alt="find-pic"></li>
-                    <li><img class="dimension-pics" src="assets/icon-cart-2.png" alt="cart-pic"></li>
-                    <li><img class="dimension-pics" src="assets/icon-exit-3.png" alt="exit-pic"></li>
-                </ul>
-            </nav>
-            <div class="title-section-a">Order Details</div>
-           </section>
-
            <section class="content hidden reward-status-page">
+                <nav class="interactive-menu">
+                    <ul>
+                        <li><a href="#">SHOP</a></li>
+                        <li><img class="dimension-pics" src="assets/icon-find.png" alt="find-pic"><a href="#"></a></li>
+                        <li><img class="dimension-pics" src="assets/icon-cart-2.png" alt="cart-pic"><a href="#"></a></li>
+                        <li><img class="dimension-pics" src="assets/icon-exit-3.png" alt="exit-pic"><a href="#"></a></li>
+                    </ul>
+                </nav>
                <div class="reward-status-body">
-                    <nav class="interactive-menu">
-                        <ul>
-                            <li><a href="#">SHOP</a></li>
-                            <li><img class="dimension-pics" src="assets/icon-find.png" alt="find-pic"></li>
-                            <li><img class="dimension-pics" src="assets/icon-cart-2.png" alt="cart-pic"></li>
-                            <li><img class="dimension-pics" src="assets/icon-exit-3.png" alt="exit-pic"></li>
-                        </ul>
-                    </nav>
                     <div class="title-section-a">Reward Status</div>
                     <div class="rows-reward-status">
                         <div class="row-a">
@@ -152,25 +146,25 @@
             <nav class="interactive-menu">
                 <ul>
                     <li><a href="#">SHOP</a></li>
-                    <li><img class="dimension-pics" src="assets/icon-find.png" alt="find-pic"></li>
-                    <li><img class="dimension-pics" src="assets/icon-cart-2.png" alt="cart-pic"></li>
-                    <li><img class="dimension-pics" src="assets/icon-exit-3.png" alt="exit-pic"></li>
+                    <li><img class="dimension-pics" src="assets/icon-find.png" alt="find-pic"><a href="#"></a></li>
+                    <li><img class="dimension-pics" src="assets/icon-cart-2.png" alt="cart-pic"><a href="#"></a></li>
+                    <li><img class="dimension-pics" src="assets/icon-exit-3.png" alt="exit-pic"><a href="#"></a></li>
                 </ul>
             </nav>
             <div class="title-section-a">Account Settings</div>
             <form>
                 <div class="account-title">Account</div>
                 <div class="form-cells">
-                    <label>Name</label>
+                    <label for="Name">Name</label>
                     <input required class="validation-input" type="text" name="Input-name" id="Name" value="Ben Cline">
-                    <label>Phone</label>
+                    <label for="Phone">Phone</label>
                     <input required class="validation-input" type="tel" name="phone" id="Phone" value="+1 801 641 09">
                 </div>
                 <div class="form-cells">
-                    <label>Email</label>
+                    <label for="Email">Email</label>
                     <input required class="validation-input" type="email" name="phone" id="Email" value="ben@rellyinteractive.com">
-                    <label>Email</label>
-                    <input required class="validation-input" type="password" name="phone" id="Email" value="password123456789">
+                    <label for="Pass">Email</label>
+                    <input required class="validation-input" type="password" name="pass" id="Pass" value="password123456789">
                 </div>
                 <button type="submit">Save changes</button>
 
@@ -200,9 +194,9 @@
             <nav class="interactive-menu">
                 <ul>
                     <li><a href="#">SHOP</a></li>
-                    <li><img class="dimension-pics" src="assets/icon-find.png" alt="find-pic"></li>
-                    <li><img class="dimension-pics" src="assets/icon-cart-2.png" alt="cart-pic"></li>
-                    <li><img class="dimension-pics" src="assets/icon-exit-3.png" alt="exit-pic"></li>
+                    <li><img class="dimension-pics" src="assets/icon-find.png" alt="find-pic"><a href="#"></a></li>
+                    <li><img class="dimension-pics" src="assets/icon-cart-2.png" alt="cart-pic"><a href="#"></a></li>
+                    <li><img class="dimension-pics" src="assets/icon-exit-3.png" alt="exit-pic"><a href="#"></a></li>
                 </ul>
             </nav>
             <div class="title-section-a">Payments Methods</div>
@@ -219,6 +213,70 @@
                     </div>
                 </div>
             </div>
+           </section>
+
+           <section class="content orders-details-page hidden">
+            <nav class="interactive-menu">
+                <ul>
+                    <li><a href="#">SHOP</a></li>
+                    <li><img class="dimension-pics" src="assets/icon-find.png" alt="find-pic"><a href="#"></a></li>
+                    <li><img class="dimension-pics" src="assets/icon-cart-2.png" alt="cart-pic"><a href="#"></a></li>
+                    <li><img class="dimension-pics" src="assets/icon-exit-3.png" alt="exit-pic"><a href="#"></a></li>
+                </ul>
+            </nav>
+
+            <div class="order-details-title">
+                <div class="orderD-row nr-order">Your Orders/Order #30002</div>
+                <div class="orderD-second-row">
+                    <div class="orderD-second-row-a">
+                        <div>Order</div>
+                        <div>Details</div>
+                   </div>
+                   <div class="orderD-second-row-b">
+                        <div>Order</div>
+                        <div>Cancelled</div>
+                   </div>
+               </div>
+           </div>
+
+            <div class="order-details-body">
+                <div class="order-details-row-a">
+                    <div class="orderD-row orderD">
+                        <div>Billing</div>
+                    </div>
+                    <div class="orderD-row">
+                        <div>Rally Interactive</div>
+                        <div>244 W 300 N</div>
+                        <div>Salt Lake City, Utah 84103</div>
+                        <div>United States</div>
+                        <div>(801) 643-3595</div>
+                    </div>
+                    <div class="orderD-row">
+                        <div>Payment Status:</div>
+                        <div>Refunded</div>
+                    </div>
+                </div>
+                <div class="order-details-row-b">
+                    <div class="orderD-row orderD">
+                        <div>Shipping</div>
+                    </div>
+                    <div class="orderD-row">
+                        <div>Rally Interactive</div>
+                        <div>244 W 300 N</div>
+                        <div>Salt Lake City, Utah 84103</div>
+                        <div>United States</div>
+                        <div>(801) 643-3595</div>
+                    </div>
+                    <div class="orderD-row">
+                        <div>Payment Status:</div>
+                        <div>Unfullfilled</div>
+                    </div>
+                </div>
+            </div>
+           </section>
+
+           <section class="content sign-out-page hidden">
+              <div class="title-section-a">Sign Out</div>
            </section>
       </main>
       <script src="resources/main.js"></script>

@@ -30,6 +30,12 @@ aside {
     text-align: center;
 }
 
+.logo-boundary-wp {
+    width: 160px;
+    height: 40px;
+    padding: 10px 0 0 30px;
+}
+
 .menu-side-section {
     margin-top: 40%;
     width: 100%;
@@ -61,7 +67,6 @@ nav a {
     cursor: pointer;
 }
 
-
 .menu-section.selected {
     border-bottom: 4px solid #e8e0d8;
 }
@@ -73,7 +78,9 @@ section, .upper-order-events-sec,
 .payment-methods-page,
 .row-a, .row-b, .row-c, .row-d,
 .reward-status-body, .form-cells, .addresses-wrapper,
-.addresses-cell-container, .plus-more, .cards-wrapper {
+.addresses-cell-container, .plus-more, .cards-wrapper, 
+.order-details-title, .order-details-body, .order-details-row-a, 
+.order-details-row-b, .orderD-second-row {
     display: flex;
 }
 
@@ -156,7 +163,7 @@ section {
     height: 100px;
 }
 
-.order {
+.order, .orderD-row, .orderD-second-row div {
     padding-bottom: 10px;
     flex: 1;
 }
@@ -166,14 +173,14 @@ section {
 }
 
 .order div:nth-child(1), .order a, .cancel-modify, .order-b, 
-.order-details {
+.order-details, .orderD-row {
     font-size: 12px;
     padding-bottom: 5px;
     font-weight: bold;
 }
 
 .order div:nth-child(2), .row-a div div:nth-child(1), .row-b div div:nth-child(1),
-.row-c div div:nth-child(1) {
+.row-c div div:nth-child(1), .orderD {
     font-weight: bold;
     font-size: 20px;
 }
@@ -204,12 +211,7 @@ section {
     width: 40px;
 }
 
-/*pages--*/
-
-.hidden, .form-cells label {
-    display: none;
-}
-
+/*--pages--*/
 .your-orders-page {
     z-index: 1;
 }
@@ -230,11 +232,7 @@ section {
     z-index: 5;
 }
 
-.order-details-page {
-    z-index: 6;
-}
-
-/*Reward-Status*/
+/*---Reward-Status---*/
 .reward-status-body {
    flex-direction: column;
    width: 96%;
@@ -259,7 +257,7 @@ section {
     cursor: pointer;
 }
 
-.dimension-pics, .row-d img {
+.dimension-pics, .row-d img, .logo-boundary{
     width: 100%; 
     height: auto;
 }
@@ -328,10 +326,15 @@ button {
     height: 40px;
 }
 
-.validation-input {
-    
+.validation-input:invalid:focus,
+.validation-input:required:invalid {
+    background-image: linear-gradient(to right, pink, #fff);
 }
 
+.input-validation:disabled {
+    background: rgb(0, 0, 255, 0.2);
+}
+    
 .addresses-wrapper {
     flex-direction: column;
     padding: 30px 0 10px 0;
@@ -387,6 +390,7 @@ button {
 .plus-pic  {
     width: 15%;
     height: auto;
+    cursor: pointer;
 }
 
 .plus-more {
@@ -402,4 +406,64 @@ button {
 
 .plus-more, .card-b {
     margin-top: 10px;
+}
+
+.hidden, .form-cells label {
+    display: none;
+}
+
+/*---order-details--*/
+.orders-details-page {
+    position: relative;
+}
+
+.order-details-body, .order-details-title {
+    flex-direction: column;
+}
+
+.order-details-title {
+    width: 850px;
+    height: 100px;
+    position: absolute;
+    top: 18%;
+}
+
+.order-details-body {
+    width: 1200px;
+    position: absolute;
+    top: 45%;
+}
+
+.order-details-row-a, .order-details-row-b {
+    padding: 10px 0 0 45px;
+}
+
+.orderD-row div {
+    margin: 5px;
+}
+
+.orderD-second-row {
+    width: 100%;
+    height: 80px;
+}
+
+.orderD-second-row, .order-details-title:nth-child(1), .nr-order {
+    padding-left: 45px;
+}
+
+.orderD-second-row-a {
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+.orderD-second-row-b {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: right;
+}
+
+.nr-order {
+    width: 200px;
+    height: 5px;
 }
